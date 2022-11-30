@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevaClaseActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="541dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="95dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/nameAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Asignatura"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <Spinner
+            android:id="@+id/diaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="39dp" />
+
+        <EditText
+            android:id="@+id/horaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Hora"
+            android:inputType="time"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/anadirBtn"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:text="@string/anadir" />
+
+            <Button
+                android:id="@+id/cancelarBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
