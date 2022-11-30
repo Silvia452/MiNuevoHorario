@@ -6,34 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/addClass"
-        android:layout_width="296dp"
-        android:layout_height="54dp"
-        android:backgroundTint="#E91E63"
-        android:text="Añadir Clase"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="173dp"
-        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="441dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813">
 
-    <Button
-        android:id="@+id/verHorario"
-        android:layout_width="299dp"
-        android:layout_height="52dp"
-        android:backgroundTint="#E91E63"
-        android:text="Ver Horario"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="267dp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/addClass"
+            android:layout_width="425dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E91E63"
+            android:text="Añadir Clase"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/tocaButton"
-        android:layout_width="303dp"
-        android:layout_height="51dp"
-        android:backgroundTint="#E91E63"
-        android:text="¿Qué toca ahora?"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="360dp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/verHorario"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E91E63"
+            android:text="Ver Horario"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/tocaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E91E63"
+            android:text="¿Qué toca ahora?"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

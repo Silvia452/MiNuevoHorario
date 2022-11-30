@@ -1,6 +1,6 @@
 package com.example.minuevohorario;
 
-public class Date {
+public class DateUtils {
 
     public static int diaOrdinal(String dia) {
 

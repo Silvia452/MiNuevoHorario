@@ -3,6 +3,7 @@ package com.example.minuevohorario;
 import static com.example.minuevohorario.MainActivity.asignaturas;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -11,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class NuevaClaseActivity extends AppCompatActivity {
+public class NuevaClaseActivity extends AppCompatActivity implements Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,9 @@ public class NuevaClaseActivity extends AppCompatActivity {
         diaSpinner.setAdapter(adapterDias);
     }
 
+
     @Override
-    public void onClick (View v) {
+    public void onClick(View v) {
 
         switch (v.getId()) {
             case R.id.anadirBtn:
